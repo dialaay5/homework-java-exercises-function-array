@@ -81,12 +81,10 @@ public class Functions {
         System.out.println("float");
     }
 
-    public static void getScanner() { //"Question 15"
-        Scanner s = new Scanner(System.in);
-        System.out.println("Please enter your name:");
-        String name = s.next();
-        System.out.println(name + " is a nice name!");
+    public static Scanner getScanner() { //"Question 15"
+        return new Scanner(System.in);
     }
+
 
     public static int randomize(int []arr1){ //"Question 16"
         // a random integer from 0 to (arr1.length) where arr1.length is not included.:

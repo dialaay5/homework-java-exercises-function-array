@@ -35,6 +35,7 @@ public class Main {
         System.out.println("\nQuestion 6");
         int k = 5;
         System.out.println(Functions.changeNumber(k)); // k = 6
+        //הערך שיודפס אמנם יהיה 6 אבל המשתנה שמוגדר בשורה 36 ישאר 5.
 
         System.out.println("\nQuestion 7");
         System.out.println(Functions.multiply(5,4));
@@ -65,7 +66,7 @@ public class Main {
         Functions.numberType(1.55f,2.78f);
 
         System.out.println("\nQuestion 15");
-       // Functions.getScanner();
+        Functions.getScanner();
 
         System.out.println("\nQuestion 16");
         int[] arr1 = {10, 30, 55, 100, 98, 75};
@@ -76,12 +77,13 @@ public class Main {
 
         System.out.println("\nQuestion 18");
         System.out.println("Local variables are defined within a function, and can only be used within the function within which they were defined.\n" +
-                "Global variables can be accessed from any function.");
+                "Global variables can be accessed from any function in the same class. The visibility of global variables outside the class depends on its access modifiers.");
 
         System.out.println("\nQuestion 19");
         Functions.printWord();
         Functions.changeWord("javascript");
-        // הערך של המשתנה הגלובלי משתנה רק בפונקצייה עצמה
+        Functions.printWord();
+        // הערך הפך להיות הערך החדש
 
         System.out.println("\nQuestion 20");
         int[] arr2 = {2 ,6 ,7 ,8 ,34 ,16};
@@ -104,7 +106,9 @@ public class Main {
 
         System.out.println("\nQuestion 24");
         System.out.println("Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.\n" +
-                "Every recursive function should have a stop condition, which is the condition where the function stops calling itself.\n");
+                "Every recursive function should have a stop condition, which is the condition where the function stops calling itself.\n" +
+                "Recursive functions also should have just one parameter which is of the same type as its \n" +
+                "return value, because what pops out from the rear needs to be fed to the front\n");
 
         System.out.println("Question 25");
         System.out.println(Functions.atsertRecursion(5));
